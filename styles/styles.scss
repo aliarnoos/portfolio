@@ -30,7 +30,9 @@ $gradient: linear-gradient(to right, #8e2de2, #4a00e0);
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
+a {
+    text-decoration: none;
+} 
 .contact-links {
     a {
         color: #fff;
@@ -116,6 +118,7 @@ nav {
 main {
     margin-block: 100px;
 
+
 }
 header {
     display: flex;
@@ -198,10 +201,11 @@ h2 {
 .skills {
     margin: 50px;
     margin-bottom: 200px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(430px, 0.6fr));
+    display: flex;
+    flex-direction: column;
+    // grid-template-columns: repeat(auto-fit, minmax(430px, 0.6fr));
     gap: 50px;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     img {
         width: 60px;
@@ -322,6 +326,21 @@ footer {
         display: flex;
         align-items: center;
         gap: 100px;
+        ul {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            gap: 40px;
+             a{
+                color: white;
+                font-size: 24px;
+                transition: all 0.3s;
+            }
+            a:hover {
+                color: #8e2de2;
+            }
+        }
     }
     form {
         max-width: 80%;
@@ -442,4 +461,10 @@ footer {
         width: 200px;
         padding: 20px;
     }
+  }
+
+  .center-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
