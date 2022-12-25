@@ -408,7 +408,7 @@ footer p {
     max-width: 100%;
   }
   .title {
-    margin-left: 50px;
+    margin-left: 40px;
   }
   .title h1 {
     font-size: 80px;
@@ -420,7 +420,7 @@ footer p {
     padding: 18px;
   }
   nav ul {
-    gap: 20px;
+    gap: 10px;
   }
   nav ul a {
     padding: 18px;
