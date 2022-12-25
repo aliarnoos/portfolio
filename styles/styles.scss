@@ -86,7 +86,6 @@ a {
       
 }
 
-
 nav {
     position: sticky;
     top: 0;
@@ -110,7 +109,8 @@ nav {
             font-size: 20px;
             transition: color 0.2s ease-out;
             &:hover {
-                @extend %text-grediant
+                // @extend %text-grediant
+                color: #8e2de2;
             }
         } 
     }
@@ -199,8 +199,8 @@ h2 {
 
 
 .skills {
-    margin: 50px;
-    margin-bottom: 200px;
+    // margin: 50px;
+    margin-bottom: 200px; 
     display: flex;
     flex-direction: column;
     // grid-template-columns: repeat(auto-fit, minmax(430px, 0.6fr));
@@ -404,6 +404,7 @@ footer {
             }
             .tech-icons {
                 display: flex;
+                flex-wrap: wrap;
                 gap: 20px;
             }
         }
@@ -419,7 +420,15 @@ footer {
     body {
         max-width: 100%;
     }
-
+    .title {
+        margin-left: 50px;
+        h1 {
+            font-size: 80px;
+        }
+        h3 {
+            font-size: 24px;
+        }
+    }
     nav {
         padding: 18px;
         ul {
@@ -435,6 +444,7 @@ footer {
         flex-direction: column;
     }
     .project-card {
+        margin: 30px;
         img {
             max-width: 100%;
         }
@@ -467,4 +477,15 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  .scroll {
+    transition: 0.4s;
+    background-image: linear-gradient(to right, #8e2de2, #4a00e0);
+    a {
+        color: white;
+        &:hover {
+            color: #dcc3f0;
+        }
+    }
   }

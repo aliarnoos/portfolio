@@ -22,7 +22,7 @@ time, mark, audio, video {
   scroll-behavior: smooth;
 }
 
-.thank-note h1, .project-card .project-info h3, header h1 span, nav ul a:hover {
+.thank-note h1, .project-card .project-info h3, header h1 span {
   background-image: linear-gradient(to right, #8e2de2, #4a00e0);
   -webkit-background-clip: text;
           background-clip: text;
@@ -107,6 +107,10 @@ nav ul a {
   font-size: 20px;
   transition: color 0.2s ease-out;
 }
+nav ul a:hover {
+  color: #8e2de2;
+}
+
 main {
   margin-block: 100px;
 }
@@ -185,7 +189,6 @@ h2 {
 }
 
 .skills {
-  margin: 50px;
   margin-bottom: 200px;
   display: flex;
   flex-direction: column;
@@ -393,6 +396,7 @@ footer p {
   }
   .skills .skill-section .tech-icons {
     display: flex;
+    flex-wrap: wrap;
     gap: 20px;
   }
   footer h1 {
@@ -402,6 +406,15 @@ footer p {
 @media (max-width: 500px) {
   body {
     max-width: 100%;
+  }
+  .title {
+    margin-left: 50px;
+  }
+  .title h1 {
+    font-size: 80px;
+  }
+  .title h3 {
+    font-size: 24px;
   }
   nav {
     padding: 18px;
@@ -415,6 +428,9 @@ footer p {
   }
   .header-btns {
     flex-direction: column;
+  }
+  .project-card {
+    margin: 30px;
   }
   .project-card img {
     max-width: 100%;
@@ -445,4 +461,15 @@ footer p {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.scroll {
+  transition: 0.4s;
+  background-image: linear-gradient(to right, #8e2de2, #4a00e0);
+}
+.scroll a {
+  color: white;
+}
+.scroll a:hover {
+  color: #dcc3f0;
 }/*# sourceMappingURL=styles.css.map */
