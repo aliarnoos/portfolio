@@ -309,6 +309,18 @@ h2 {
     }
         }
 
+.about {
+    color: #fff;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    background-image:linear-gradient(to right, #8e2de2, #4a00e0);
+    padding-block: 120px;
+    p {
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+    }
+
 footer {
     padding: 30px;
     background-image: $gradient;
@@ -414,6 +426,11 @@ footer {
             font-size: 12vw;
         }
     }
+    .about p {
+        
+            margin-left: 50px;
+            margin-right: 50px;
+    }
   }
 
   @media (max-width: 500px) {
@@ -489,3 +506,4 @@ footer {
         }
     }
   }
+
